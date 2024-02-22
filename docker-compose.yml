@@ -1,0 +1,10 @@
+version: '3'
+services:
+  your-service-name:
+    build: .
+    ports:
+      - "4200:4200"
+      - "3389:3389"
+      - "4040:4040"
+    volumes:
+      - "./xrdp.ini:/etc/xrdp/xrdp.ini"
