@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Build the Docker image
+docker build -t your-image-name .
+
+# Run the Docker container
+docker run -it --rm \
+    -p 4200:4200 \
+    -p 3389:3389 \
+    -p 4040:4040 \
+    --name your-container-name \
+    your-image-name
